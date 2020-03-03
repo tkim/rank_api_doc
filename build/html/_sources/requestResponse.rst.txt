@@ -45,6 +45,17 @@ The following are the list of the Error messages from the RANK API service.
 +----------------------------------------------+-------------------------------------------------------+
 
 
+RANK API Code Samples
+=====================
+
+.. important::
+
+			The latest RANK API Code samples can be found `here`_.
+
+			.. _here: https://github.com/tkim/rank_api_repository
+
+
+
 
 
 

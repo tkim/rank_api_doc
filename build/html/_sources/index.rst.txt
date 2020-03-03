@@ -29,7 +29,7 @@ The object model for Java, .NET and C++ are identical. The C interface provides 
    :maxdepth: 2
    
    introduction
+   serverApi
    requestResponse
    
 
-   
