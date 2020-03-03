@@ -1,0 +1,265 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>RANK API data request &mdash; RANK API Programmers Guide 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Introduction" href="introduction.html" /> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> RANK API Programmers Guide
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html#how-to-install-serverapi-exe">How to install serverapi.exe</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">RANK API data request</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-the-test-environment">Accessing the Test Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#api-demo-tool">API Demo Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#error-messages">Error Messages</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RANK API Programmers Guide</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>RANK API data request</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/requestResponse.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rank-api-data-request">
+<h1>RANK API data request<a class="headerlink" href="#rank-api-data-request" title="Permalink to this headline">¶</a></h1>
+<p>For RANK API data extraction is accopmlished by referencing <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code>  as the service name in your program. This command will allow your service to redirect all RANK API request to the test environment.</p>
+<p>Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal notranslate"><span class="pre">//blp/rankapi</span></code>.</p>
+<div class="section" id="accessing-the-test-environment">
+<h2>Accessing the Test Environment<a class="headerlink" href="#accessing-the-test-environment" title="Permalink to this headline">¶</a></h2>
+<p>Bloomberg provides a test environment for clients to build and test their strategies using the IOI API.</p>
+</div>
+<div class="section" id="api-demo-tool">
+<h2>API Demo Tool<a class="headerlink" href="#api-demo-tool" title="Permalink to this headline">¶</a></h2>
+<p>API Demo Tool is a handy tool while developing on any Bloomberg API services. The API Demo Tool provides real-time schema viewing tool among other handy tools that can be leveraged during the initial development.</p>
+<p>The API Demo Tool can be downloaded from the Bloomberg terminal along with other generic Bloomberg API code samples.</p>
+<blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">WAPI&lt;GO&gt;</span></code> &gt;&gt; <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">Download</span> <span class="pre">Center</span></code> &gt;&gt; <code class="docutils literal notranslate"><span class="pre">Download</span></code></div></blockquote>
+</div>
+<div class="section" id="error-messages">
+<h2>Error Messages<a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h2>
+<p>The following are the list of the Error messages from the RANK API service.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Error Message</th>
+<th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>No Start Date provided in RANK API request</td>
+<td>Need to provide start date</td>
+</tr>
+<tr class="row-odd"><td>No End Date provided in RANK API request</td>
+<td>Need to provide end date</td>
+</tr>
+<tr class="row-even"><td>No units specified in RANK API request</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>No gropuBy specified in RANK API request</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-even"><td>No source specified in RANK API request</td>
+<td>&#160;</td>
+</tr>
+<tr class="row-odd"><td>Invalid request parameter</td>
+<td><div class="first last line-block">
+<div class="line">Securities, exchanges or brokers need to be</div>
+<div class="line">specified in input query. At least one is required</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Terrence C. Kim
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
