@@ -169,6 +169,29 @@
 <div class="section" id="error-messages">
 <h2>Error Messages<a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h2>
 <p>The following are the list of the Error messages from the RANK API service.</p>
+<p>BLP API Infrastrcuture related error messages:-</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Error Message</th>
+<th class="head">Definition</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>… BLPAPI Timeout event …</td>
+<td><div class="first last line-block">
+<div class="line">Set sessionOption.setMaxPendingRequest(1). Do not</div>
+<div class="line">have multiple sessions in parallel with the same</div>
+<div class="line">UUID.</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Rank API service error messages:-</p>
 <table border="1" class="docutils">
 <colgroup>
 <col width="46%" />
@@ -181,24 +204,105 @@
 </thead>
 <tbody valign="top">
 <tr class="row-even"><td>No Start Date provided in RANK API request</td>
-<td>Need to provide start date</td>
+<td>Mandatory field, need to provide the start date</td>
 </tr>
 <tr class="row-odd"><td>No End Date provided in RANK API request</td>
-<td>Need to provide end date</td>
+<td>Mandatory field, need to provide end date</td>
 </tr>
 <tr class="row-even"><td>No units specified in RANK API request</td>
-<td>&#160;</td>
+<td><div class="first last line-block">
+<div class="line">Mandatory field, need to specify units</div>
+<div class="line">(e.g. Shares, Local, USD, EUR, GBP)</div>
+</div>
+</td>
 </tr>
 <tr class="row-odd"><td>No gropuBy specified in RANK API request</td>
-<td>&#160;</td>
+<td><div class="first last line-block">
+<div class="line">Mandatory field, need to specify groupby element</div>
+<div class="line">(e.g. broker or security)</div>
+</div>
+</td>
 </tr>
 <tr class="row-even"><td>No source specified in RANK API request</td>
-<td>&#160;</td>
-</tr>
-<tr class="row-odd"><td>Invalid request parameter</td>
 <td><div class="first last line-block">
-<div class="line">Securities, exchanges or brokers need to be</div>
-<div class="line">specified in input query. At least one is required</div>
+<div class="line">Mandatory field, need to specify the source element</div>
+<div class="line">(e.g. Broker Contributed)</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Source field invalid. Only source =</div>
+<div class="line">BROKER_CONTRIBUTED is supported</div>
+</div>
+</td>
+<td>The source field has invalid input value.</td>
+</tr>
+<tr class="row-even"><td>Invalid unit value</td>
+<td>The unit field has invalid input value.</td>
+</tr>
+<tr class="row-odd"><td>Invalid groupby value</td>
+<td><div class="first last line-block">
+<div class="line">The groupby field has invalid input value.</div>
+<div class="line">(e.g. broker or security)</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Invalid start date</td>
+<td>The start date parameter contains invalid input.</td>
+</tr>
+<tr class="row-odd"><td>Invalid end date</td>
+<td>The end date parameter contains invalid input.</td>
+</tr>
+<tr class="row-even"><td>Invalid security selection</td>
+<td>Neither ticker nor figi was provided.</td>
+</tr>
+<tr class="row-odd"><td>Invalid request parameters</td>
+<td><div class="first last line-block">
+<div class="line">Invalid request. The result contains multiple</div>
+<div class="line">exchanges or no securities, exchanges or brokers are</div>
+<div class="line">specified in the request.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">Invalid broker list include/exclude</div>
+<div class="line">combination.</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">Invalid combination of included or excluded broker</div>
+<div class="line">list.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>End date less than start date</td>
+<td><div class="first last line-block">
+<div class="line">The start date/time should be earlier in date/time</div>
+<div class="line">compared to the end date/time.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">Start date less than earliest allowed date</div>
+<div class="line">for RANK query</div>
+</div>
+</td>
+<td><div class="first last line-block">
+<div class="line">The start date/time should be within 5 years from</div>
+<div class="line">the current date.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td>No ticker conversion for figi</td>
+<td><div class="first last line-block">
+<div class="line">The figi provided did not find a corresponding</div>
+<div class="line">ticker value.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td>Internal Error</td>
+<td><div class="first last line-block">
+<div class="line">Please contact Bloomberg, miscellaneous error.</div>
 </div>
 </td>
 </tr>
