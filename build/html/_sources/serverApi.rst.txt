@@ -1,7 +1,12 @@
-############################
-How to install serverapi.exe
-############################
+#########################
+Zero Footprint Deployment
+#########################
+Traditionally, Bloomberg soultions are connected via pair of Bloomberg appliances which are deployed at the customer's site(s). The zero footprint solution offers a lighter technical footprint to better meet the customer needs. A zero footprint solution does not require Bloomberg hardware and there will be no cost associated with racking and stacking the hardware at the customer's data center. With the zero footprint soultion, the software that is normally installed in the appliance runs on the Bloomberg cloud or in a Bloomberg managed virtual private cloud in AWS (Amazon Web Services). The zero footprint solution is accessible via both internet and private leased lines.
 
+
+
+How to Install serverapi.exe
+============================
 Please follow the following steps to install and register the installer with Bloomberg Enterprise Solutions with the assistance from EMSX Implementation team.
 
 Linux Environment
