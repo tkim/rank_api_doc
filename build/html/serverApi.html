@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Zero Footprint Deployment &mdash; RANK API Programmers Guide 0.1 documentation</title>
+  <title>Zero Footprint Deployment (ZFP) &mdash; RANK API Programmers Guide 0.1 documentation</title>
   
 
   
@@ -82,7 +82,11 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Zero Footprint Deployment</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Zero Footprint Deployment (ZFP)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#end-point">End-Point</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#end-point-discovery-connectivity">End-Point Discovery &amp; Connectivity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tcp-or-socks-proxy">TCP or SOCKS Proxy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#concurrent-connection">Concurrent Connection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-install-serverapi-exe">How to Install serverapi.exe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#linux-environment">Linux Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#windows-environment">Windows Environment</a></li>
@@ -121,7 +125,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Zero Footprint Deployment</li>
+    <li>Zero Footprint Deployment (ZFP)</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -135,9 +139,37 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="zero-footprint-deployment">
-<h1>Zero Footprint Deployment<a class="headerlink" href="#zero-footprint-deployment" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="zero-footprint-deployment-zfp">
+<h1>Zero Footprint Deployment (ZFP)<a class="headerlink" href="#zero-footprint-deployment-zfp" title="Permalink to this headline">¶</a></h1>
 <p>Traditionally, Bloomberg soultions are connected via pair of Bloomberg appliances which are deployed at the customer&#8217;s site(s). The zero footprint solution offers a lighter technical footprint to better meet the customer needs. A zero footprint solution does not require Bloomberg hardware and there will be no cost associated with racking and stacking the hardware at the customer&#8217;s data center. With the zero footprint soultion, the software that is normally installed in the appliance runs on the Bloomberg cloud or in a Bloomberg managed virtual private cloud in AWS (Amazon Web Services). The zero footprint solution is accessible via both internet and private leased lines.</p>
+<div class="section" id="end-point">
+<h2>End-Point<a class="headerlink" href="#end-point" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Prior to connecting, customer must create an endpoint to Bloomberg service on AWS. (Amazon Web Services)</p>
+</div>
+<p>Production:</p>
+<p>Production (China):</p>
+<p>Beta:</p>
+<p>Port Number:</p>
+</div>
+<div class="section" id="end-point-discovery-connectivity">
+<h2>End-Point Discovery &amp; Connectivity<a class="headerlink" href="#end-point-discovery-connectivity" title="Permalink to this headline">¶</a></h2>
+<p>ZFP over Internet:</p>
+<p>ZFP over Leased Line(s):</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">The client should always use the host name listed below and not the actual IP addresses.</p>
+</div>
+</div>
+<div class="section" id="tcp-or-socks-proxy">
+<h2>TCP or SOCKS Proxy<a class="headerlink" href="#tcp-or-socks-proxy" title="Permalink to this headline">¶</a></h2>
+<p>As of SDK 3.14.x.x, the SOCKS proxy is not supported in Bloomberg API.</p>
+</div>
+<div class="section" id="concurrent-connection">
+<h2>Concurrent Connection<a class="headerlink" href="#concurrent-connection" title="Permalink to this headline">¶</a></h2>
+<p>The maximum concurrent connection allowed is 12 per certificate. For clients connecting via internet,</p>
+</div>
 <div class="section" id="how-to-install-serverapi-exe">
 <h2>How to Install serverapi.exe<a class="headerlink" href="#how-to-install-serverapi-exe" title="Permalink to this headline">¶</a></h2>
 <p>Please follow the following steps to install and register the installer with Bloomberg Enterprise Solutions with the assistance from EMSX Implementation team.</p>

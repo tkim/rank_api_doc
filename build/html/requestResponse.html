@@ -34,7 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="RANK API Programmers Guide 0.1 documentation" href="index.html"/>
-        <link rel="prev" title="Zero Footprint Deployment" href="serverApi.html"/> 
+        <link rel="prev" title="Zero Footprint Deployment (ZFP)" href="serverApi.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -81,7 +81,7 @@
             
                 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="serverApi.html">Zero Footprint Deployment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serverApi.html">Zero Footprint Deployment (ZFP)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">RANK API data request</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#accessing-the-test-environment">Accessing the Test Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#api-demo-tool">API Demo Tool</a></li>
@@ -137,6 +137,10 @@
 <h1>RANK API data request<a class="headerlink" href="#rank-api-data-request" title="Permalink to this headline">¶</a></h1>
 <p>For RANK API data extraction is accopmlished by referencing <code class="docutils literal"><span class="pre">//blp/rankapi-beta</span></code>  as the service name in your program. This command will allow your service to redirect all RANK API request to the test environment.</p>
 <p>Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from <code class="docutils literal"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal"><span class="pre">//blp/rankapi</span></code>.</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">Please keep each request to have less than 3000 securities per request.</p>
+</div>
 <div class="section" id="accessing-the-test-environment">
 <h2>Accessing the Test Environment<a class="headerlink" href="#accessing-the-test-environment" title="Permalink to this headline">¶</a></h2>
 <p>Bloomberg provides a test environment for clients to build and test their strategies using the IOI API.</p>
@@ -392,7 +396,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="serverApi.html" class="btn btn-neutral" title="Zero Footprint Deployment" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="serverApi.html" class="btn btn-neutral" title="Zero Footprint Deployment (ZFP)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

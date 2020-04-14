@@ -6,6 +6,10 @@ For RANK API data extraction is accopmlished by referencing ``//blp/rankapi-beta
 
 Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from ``//blp/rankapi-beta`` to  ``//blp/rankapi``.
 
+.. important::
+
+	Please keep each request to have less than 3000 securities per request.
+
 
 Accessing the Test Environment
 ==============================

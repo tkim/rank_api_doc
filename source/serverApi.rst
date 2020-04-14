@@ -1,9 +1,44 @@
-#########################
-Zero Footprint Deployment
-#########################
+###############################
+Zero Footprint Deployment (ZFP)
+###############################
 Traditionally, Bloomberg soultions are connected via pair of Bloomberg appliances which are deployed at the customer's site(s). The zero footprint solution offers a lighter technical footprint to better meet the customer needs. A zero footprint solution does not require Bloomberg hardware and there will be no cost associated with racking and stacking the hardware at the customer's data center. With the zero footprint soultion, the software that is normally installed in the appliance runs on the Bloomberg cloud or in a Bloomberg managed virtual private cloud in AWS (Amazon Web Services). The zero footprint solution is accessible via both internet and private leased lines.
 
+End-Point 
+=========
 
+.. important::
+
+	Prior to connecting, customer must create an endpoint to Bloomberg service on AWS. (Amazon Web Services)
+
+
+Production:
+
+Production (China):
+
+Beta:
+
+Port Number:
+
+
+End-Point Discovery & Connectivity
+==================================
+ZFP over Internet:
+
+ZFP over Leased Line(s):
+
+.. important::
+
+	The client should always use the host name listed below and not the actual IP addresses.
+
+
+TCP or SOCKS Proxy
+==================
+As of SDK 3.14.x.x, the SOCKS proxy is not supported in Bloomberg API.
+
+
+Concurrent Connection
+=====================
+The maximum concurrent connection allowed is 12 per certificate. For clients connecting via internet, 
 
 How to Install serverapi.exe
 ============================
