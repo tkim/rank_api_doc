@@ -105,7 +105,350 @@ RANK API Code Samples
 
 
 
+Request Created:-
 
+.. code:: python
+
+	Bloomberg - RANK API Example - rankDataRequst
+	Connecting to localhost:8194
+	processEvent
+	SessionConnectionUp = {
+		server = "localhost:8194"
+		encryptionStatus = "Clear"
+	}
+
+	Processing SESSION_STATUS event
+	SessionConnectionUp = {
+		server = "localhost:8194"
+		encryptionStatus = "Clear"
+	}
+
+	processEvent
+	SessionStarted = {
+		initialEndpoints[] = {
+			initialEndpoints = {
+				address = "localhost:8194"
+			}
+		}
+	}
+
+	Processing SESSION_STATUS event
+	Session started...
+	processEvent
+	ServiceOpened = {
+		serviceName = "//blp/rankapi-beta"
+	}
+
+	Processing SERVICE_STATUS event
+	Service opened...
+	Sending Request: Query = {
+		brokers[] = {
+			brokers = {
+				acronym = "BCAP"
+			}
+		}
+		start = 2020-02-01
+		end = 2020-02-12
+		groupBy = Broker
+		securityCriteria = {
+			exchanges[] = {
+				exchanges = {
+					code = "US"
+				}
+			}
+		}
+		source = Broker Contributed
+		units = Shares
+	}
+
+	RANK data request sent.
+
+
+Output:-
+
+.. code:: python
+
+	processEvent
+	Report = {
+		records[] = {
+			records = {
+				security = {
+					ticker = "F US EQUITY"
+				}
+				topBrokers[] = {
+					topBrokers = {
+						acronym = "VIRT"
+						name = "VIRTU FINANCIAL"
+						rank = 1
+					}
+					topBrokers = {
+						acronym = "CSFB"
+						name = "CREDIT SUISSE"
+						rank = 2
+					}
+				}
+				bought = 0.000000
+				sold = 0.000000
+				traded = 27931645.000000
+				crossed = 111154.000000
+				total = 28153953.000000
+				highTouch = 0.000000
+				lowTouch = 0.000000
+				numReports = 750
+				}
+				records = {
+					security = {
+						ticker = "CHK US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "CSFB"
+							name = "CREDIT SUISSE"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 22572462.000000
+					crossed = 0.000000
+					total = 22572462.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 434
+				}
+				records = {
+					security = {
+						ticker = "NOK US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "CSFB"
+							name = "CREDIT SUISSE"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 18260262.000000
+					crossed = 0.000000
+					total = 18260262.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 301
+				}
+				records = {
+					security = {
+						ticker = "VXX US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "BCAP"
+							name = "BARCLAYS CAPITAL"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 15629883.000000
+					crossed = 0.000000
+					total = 15629883.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 295
+				}
+				records = {
+					security = {
+						ticker = "GE US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "CSFB"
+							name = "CREDIT SUISSE"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 14989980.000000
+					crossed = 0.000000
+					total = 14989980.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 278
+				}
+				records = {
+					security = {
+						ticker = "PBR US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "MLCO"
+							name = "MERRILL LYNCH"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "CSFB"
+							name = "CREDIT SUISSE"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 14962016.000000
+					crossed = 0.000000
+					total = 14962016.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 317
+				}
+				records = {
+					security = {
+						ticker = "EEM US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "CITI"
+							name = "CITIGROUP GLOBAL MARKETS"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 13579058.000000
+					crossed = 0.000000
+					total = 13579058.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 361
+				}
+				records = {
+					security = {
+						ticker = "NLOK US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "BCAP"
+							name = "BARCLAYS CAPITAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "MSCO"
+							name = "MORGAN STANLEY"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 12741007.000000
+					crossed = 100000.000000
+					total = 12941007.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 505
+				}
+				records = {
+					security = {
+						ticker = "ABEV US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "CITI"
+							name = "CITIGROUP GLOBAL MARKETS"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 12476275.000000
+					crossed = 0.000000
+					total = 12476275.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 370
+				}
+				records = {
+					security = {
+						ticker = "NIO US EQUITY"
+					}
+					topBrokers[] = {
+						topBrokers = {
+							acronym = "VIRT"
+							name = "VIRTU FINANCIAL"
+							rank = 1
+						}
+						topBrokers = {
+							acronym = "CSFB"
+							name = "CREDIT SUISSE"
+							rank = 2
+						}
+					}
+					bought = 0.000000
+					sold = 0.000000
+					traded = 12397212.000000
+					crossed = 0.000000
+					total = 12397212.000000
+					highTouch = 0.000000
+					lowTouch = 0.000000
+					numReports = 317
+				}
+						records = {
+				security = {
+					ticker = "INDL US EQUITY"
+				}
+				topBrokers[] = {
+					topBrokers = {
+						acronym = "VIRT"
+						name = "VIRTU FINANCIAL"
+						rank = 1
+					}
+					topBrokers = {
+						acronym = "CSFB"
+						name = "CREDIT SUISSE"
+						rank = 2
+					}
+				}
+				bought = 0.000000
+				sold = 0.000000
+				traded = 2200.000000
+				crossed = 0.000000
+				total = 2200.000000
+				highTouch = 0.000000
+				lowTouch = 0.000000
+				numReports = 2
+			}
+		}
+		timestampUtc = 2020-04-20T13:07:25.168+00:00
+	}
 
 
 
