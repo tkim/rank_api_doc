@@ -27,7 +27,6 @@ The API Demo Tool can be downloaded from the Bloomberg terminal along with other
 
 Error Messages
 ==============
-
 The following are the list of the Error messages from the RANK API service.
 
 BLP API Infrastrcuture related error messages:-
