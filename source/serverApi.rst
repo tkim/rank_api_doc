@@ -591,16 +591,10 @@ The following example is based on the windows environment.
 
 Creating User Identities
 ========================
-The steps involved in connecting to the EMSX API on the desktop are as follows:-
-
-
-.. image:: /image/userIdentity.png
-
-
 In the server environment, the user identities must be created and cached prior to the making requests.  Therefore, the process would look as follows:-
 
 
-.. image:: /image/userIdentity2.png
+.. image:: /image/creatingUserIdentity.png
 
 
 The first new step is to open the authentication service. This is done in the same way as for any other service in the Bloomberg API. For example:-
@@ -675,15 +669,11 @@ In the above code, you will see that we examine the ‘seatType’ of the identi
 
 Using User Identities
 =====================
-When a client application connects to Bloomberg via the API on the desktop, it does so by leveraging the identity of the logged in Bloomberg terminal user. This means that when a request or subscription object is received by the Bloomberg infrastructure, the target user can be identified using the desktop credential.
-
-In the server environment, there is no Bloomberg terminal, and therefore no implied user can be identified.  Moreover, the server is capable of connecting to any number of users, simultaneously. Therefore, the application making the call must indicate which user is the intended target. This is done through the creation and use of Identity object.
+In the server environment, there is no Bloomberg terminal, and therefore no implied user can be identified.  Moreover, the server is capable of connecting to any number of IOI user identities, simultaneously. Therefore, the application making the call must indicate which user is the intended target. This is done through the creation and use of Identity object.
 
 An Identity object represents a specific Bloomberg UUID.  Once created, an Identity object can be cached for 24hrs, and used with every ``sendRequest()`` and ``subscribe()`` call. 
 
-Identity objects are live, that is they remain connected to Bloomberg in real-time and are capable of receiving events. We recommend that an identity is recreated every 24hrs, to ensure that it picks up the latest changes to any user settings. 
-
-Any number of user Identity object can be created by a server-side application. If the application uses the identities of real traders within a firm, then each trader would have an identity created to represent them in the server application. The server application would, perhaps, receive an instruction from the upstream client-side application to create an order in a trader’s blotter. The server application would select the appropriate user identity from the cache and add it to the request.
+Identity objects are live, that is they remain connected to Bloomberg in real-time and are capable of receiving events. We recommend that an identity is recreated every 24hrs, to ensure that it picks up the latest changes to any user settings, including access to ``IOI<GO>``. 
 
 Migrating the existing desktop application call to a server application simply involves changing all ``sendRequest()`` and ``subscribe()`` calls to include the appropriate identity, as follows:-
 

@@ -13,6 +13,8 @@
 
   
   
+  
+  
 
   
 
@@ -22,27 +24,20 @@
 
   
 
-  
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="RANK API Programmers Guide 0.1 documentation" href="index.html"/>
-        <link rel="prev" title="Zero Footprint Deployment (ZFP)" href="serverApi.html"/> 
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Zero Footprint Deployment (ZFP)" href="serverApi.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -79,13 +74,17 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="serverApi.html">Zero Footprint Deployment (ZFP)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">RANK API data request</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#accessing-the-test-environment">Accessing the Test Environment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#api-demo-tool">API Demo Tool</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#error-messages">Error Messages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#description-of-elements">Description of Elements</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rank-data-request">RANK Data request</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#rank-api-code-samples">RANK API Code Samples</a></li>
 </ul>
@@ -101,34 +100,54 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">RANK API Programmers Guide</a>
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RANK API Programmers Guide</a>
+        
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>RANK API data request</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>RANK API data request</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
+            
             <a href="_sources/requestResponse.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -136,8 +155,8 @@
             
   <div class="section" id="rank-api-data-request">
 <h1>RANK API data request<a class="headerlink" href="#rank-api-data-request" title="Permalink to this headline">¶</a></h1>
-<p>For RANK API data extraction is accopmlished by referencing <code class="docutils literal"><span class="pre">//blp/rankapi-beta</span></code>  as the service name in your program. This command will allow your service to redirect all RANK API request to the test environment.</p>
-<p>Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from <code class="docutils literal"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal"><span class="pre">//blp/rankapi</span></code>.</p>
+<p>For RANK API data extraction is accopmlished by referencing <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code>  as the service name in your program. This command will allow your service to redirect all RANK API request to the test environment.</p>
+<p>Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal notranslate"><span class="pre">//blp/rankapi</span></code>.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">Please keep each request to have less than 3000 securities per request.</p>
@@ -151,7 +170,7 @@
 <p>API Demo Tool is a handy tool while developing on any Bloomberg API services. The API Demo Tool provides real-time schema viewing tool among other handy tools that can be leveraged during the initial development.</p>
 <p>The API Demo Tool can be downloaded from the Bloomberg terminal along with other generic Bloomberg API code samples.</p>
 <blockquote>
-<div><code class="docutils literal"><span class="pre">WAPI&lt;GO&gt;</span></code> &gt;&gt; <code class="docutils literal"><span class="pre">API</span> <span class="pre">Download</span> <span class="pre">Center</span></code> &gt;&gt; <code class="docutils literal"><span class="pre">Download</span></code></div></blockquote>
+<div><code class="docutils literal notranslate"><span class="pre">WAPI&lt;GO&gt;</span></code> &gt;&gt; <code class="docutils literal notranslate"><span class="pre">API</span> <span class="pre">Download</span> <span class="pre">Center</span></code> &gt;&gt; <code class="docutils literal notranslate"><span class="pre">Download</span></code></div></blockquote>
 </div>
 <div class="section" id="error-messages">
 <h2>Error Messages<a class="headerlink" href="#error-messages" title="Permalink to this headline">¶</a></h2>
@@ -168,7 +187,7 @@
 </tr>
 </thead>
 <tbody valign="top">
-<tr class="row-even"><td>... BLPAPI Timeout event ...</td>
+<tr class="row-even"><td>… BLPAPI Timeout event …</td>
 <td><div class="first last line-block">
 <div class="line">Set sessionOption.setMaxPendingRequest(1). Do not</div>
 <div class="line">have multiple sessions in parallel with the same</div>
@@ -380,9 +399,56 @@
 </tbody>
 </table>
 </div>
+<div class="section" id="description-of-elements">
+<h2>Description of Elements<a class="headerlink" href="#description-of-elements" title="Permalink to this headline">¶</a></h2>
+<p>The following elements are available for RANK API.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="55%" />
+<col width="10%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Element Name</th>
+<th class="head">Description</th>
+<th class="head">Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">acronym</span></code></td>
+<td>IPER code to target IOIs</td>
+<td>string</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">currency</span></code></td>
+<td>Currency of the IOI</td>
+<td>string</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">delta</span></code></td>
+<td>Options delta</td>
+<td>float64</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="section" id="rank-data-request">
 <h2>RANK Data request<a class="headerlink" href="#rank-data-request" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Bloomberg</span> <span class="o">-</span> <span class="n">RANK</span> <span class="n">API</span> <span class="n">Example</span> <span class="o">-</span> <span class="n">rankDataRequst</span>
+<p>The <code class="docutils literal notranslate"><span class="pre">rankDataRequest</span></code> request allows RANK API service to pull the RANK data.</p>
+<p>Full code sample:-</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="52%" />
+<col width="48%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference external" href="https://github.com/tkim/rank_api_repository/blob/master/rankDataRequest.py">rankDataRequest cs</a></td>
+<td><a class="reference external" href="https://github.com/tkim/rank_api_repository/blob/master/rankDataRequest.py">rankDataRequest py</a></td>
+</tr>
+<tr class="row-even"><td><a class="reference external" href="https://github.com/tkim/rank_api_repository/blob/master/rankDataRequest.py">rankDataRequest java</a></td>
+<td>&#160;</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Bloomberg</span> <span class="o">-</span> <span class="n">RANK</span> <span class="n">API</span> <span class="n">Example</span> <span class="o">-</span> <span class="n">rankDataRequst</span>
 <span class="n">Connecting</span> <span class="n">to</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">8194</span>
 <span class="n">processEvent</span>
 <span class="n">SessionConnectionUp</span> <span class="o">=</span> <span class="p">{</span>
@@ -438,7 +504,7 @@
 </pre></div>
 </div>
 <p>Output:-</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">processEvent</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">processEvent</span>
 <span class="n">Report</span> <span class="o">=</span> <span class="p">{</span>
                 <span class="n">records</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
                                 <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
@@ -518,31 +584,6 @@
                                                 <span class="p">}</span>
                                                 <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
                                                                 <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">ticker</span> <span class="o">=</span> <span class="s2">&quot;VXX US EQUITY&quot;</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;VIRT&quot;</span>
-                                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;VIRTU FINANCIAL&quot;</span>
-                                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">1</span>
-                                                                                <span class="p">}</span>
-                                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;ABCD&quot;</span>
-                                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;ABCD CAPITAL&quot;</span>
-                                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">2</span>
-                                                                                <span class="p">}</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">traded</span> <span class="o">=</span> <span class="mf">15629883.000000</span>
-                                                                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">total</span> <span class="o">=</span> <span class="mf">15629883.000000</span>
-                                                                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">295</span>
-                                                <span class="p">}</span>
-                                                <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                                                                <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
                                                                                 <span class="n">ticker</span> <span class="o">=</span> <span class="s2">&quot;GE US EQUITY&quot;</span>
                                                                 <span class="p">}</span>
                                                                 <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
@@ -590,31 +631,6 @@
                                                                 <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
                                                                 <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
                                                                 <span class="n">numReports</span> <span class="o">=</span> <span class="mi">317</span>
-                                                <span class="p">}</span>
-                                                <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                                                                <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">ticker</span> <span class="o">=</span> <span class="s2">&quot;EEM US EQUITY&quot;</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;VIRT&quot;</span>
-                                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;VIRTU FINANCIAL&quot;</span>
-                                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">1</span>
-                                                                                <span class="p">}</span>
-                                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CITI&quot;</span>
-                                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CITIGROUP GLOBAL MARKETS&quot;</span>
-                                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">2</span>
-                                                                                <span class="p">}</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">traded</span> <span class="o">=</span> <span class="mf">13579058.000000</span>
-                                                                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">total</span> <span class="o">=</span> <span class="mf">13579058.000000</span>
-                                                                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">361</span>
                                                 <span class="p">}</span>
                                                 <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
                                                                 <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
@@ -667,62 +683,37 @@
                                                                 <span class="n">numReports</span> <span class="o">=</span> <span class="mi">370</span>
                                                 <span class="p">}</span>
                                                 <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                                                                <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">ticker</span> <span class="o">=</span> <span class="s2">&quot;NIO US EQUITY&quot;</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;VIRT&quot;</span>
-                                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;VIRTU FINANCIAL&quot;</span>
-                                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">1</span>
-                                                                                <span class="p">}</span>
-                                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CSFB&quot;</span>
-                                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CREDIT SUISSE&quot;</span>
-                                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">2</span>
-                                                                                <span class="p">}</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">traded</span> <span class="o">=</span> <span class="mf">12397212.000000</span>
-                                                                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">total</span> <span class="o">=</span> <span class="mf">12397212.000000</span>
-                                                                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">317</span>
-                                                <span class="p">}</span>
-                                                                                <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                                                <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
-                                                                <span class="n">ticker</span> <span class="o">=</span> <span class="s2">&quot;INDL US EQUITY&quot;</span>
-                                                <span class="p">}</span>
-                                                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;VIRT&quot;</span>
-                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;VIRTU FINANCIAL&quot;</span>
-                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">1</span>
-                                                                <span class="p">}</span>
-                                                                <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
-                                                                                <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CSFB&quot;</span>
-                                                                                <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CREDIT SUISSE&quot;</span>
-                                                                                <span class="n">rank</span> <span class="o">=</span> <span class="mi">2</span>
-                                                                <span class="p">}</span>
-                                                <span class="p">}</span>
-                                                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                <span class="n">traded</span> <span class="o">=</span> <span class="mf">2200.000000</span>
-                                                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                <span class="n">total</span> <span class="o">=</span> <span class="mf">2200.000000</span>
-                                                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                                                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-                                <span class="p">}</span>
-                <span class="p">}</span>
-                <span class="n">timestampUtc</span> <span class="o">=</span> <span class="mi">2020</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">20</span><span class="n">T13</span><span class="p">:</span><span class="mo">07</span><span class="p">:</span><span class="mf">25.168</span><span class="o">+</span><span class="mo">00</span><span class="p">:</span><span class="mo">00</span>
-<span class="p">}</span>
+                                                        <span class="n">security</span> <span class="o">=</span> <span class="p">{</span>
+                                                                        <span class="n">ticker</span> <span class="o">=</span> <span class="s2">&quot;INDL US EQUITY&quot;</span>
+                                                        <span class="p">}</span>
+                                                        <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
+                                                                        <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
+                                                                                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;VIRT&quot;</span>
+                                                                                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;VIRTU FINANCIAL&quot;</span>
+                                                                                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">1</span>
+                                                                        <span class="p">}</span>
+                                                                        <span class="n">topBrokers</span> <span class="o">=</span> <span class="p">{</span>
+                                                                                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CSFB&quot;</span>
+                                                                                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CREDIT SUISSE&quot;</span>
+                                                                                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">2</span>
+                                                                        <span class="p">}</span>
+                                                        <span class="p">}</span>
+                                                        <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
+                                                        <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
+                                                        <span class="n">traded</span> <span class="o">=</span> <span class="mf">2200.000000</span>
+                                                        <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
+                                                        <span class="n">total</span> <span class="o">=</span> <span class="mf">2200.000000</span>
+                                                        <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
+                                                        <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
+                                                        <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
+                                        <span class="p">}</span>
+                        <span class="p">}</span>
+                        <span class="n">timestampUtc</span> <span class="o">=</span> <span class="mi">2020</span><span class="o">-</span><span class="mo">04</span><span class="o">-</span><span class="mi">20</span><span class="n">T13</span><span class="p">:</span><span class="mo">07</span><span class="p">:</span><span class="mf">25.168</span><span class="o">+</span><span class="mo">00</span><span class="p">:</span><span class="mo">00</span>
+        <span class="p">}</span>
 </pre></div>
 </div>
-<p>Request created specifying the ticker <code class="docutils literal"><span class="pre">AAPL</span> <span class="pre">US</span> <span class="pre">Equity</span></code>:-</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Bloomberg</span> <span class="o">-</span> <span class="n">RANK</span> <span class="n">API</span> <span class="n">Example</span> <span class="o">-</span> <span class="n">rankDataRequst</span>
+<p>Request created specifying the ticker <code class="docutils literal notranslate"><span class="pre">AAPL</span> <span class="pre">US</span> <span class="pre">Equity</span></code>:-</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Bloomberg</span> <span class="o">-</span> <span class="n">RANK</span> <span class="n">API</span> <span class="n">Example</span> <span class="o">-</span> <span class="n">rankDataRequst</span>
 <span class="n">Connecting</span> <span class="n">to</span> <span class="n">localhost</span><span class="p">:</span><span class="mi">8194</span>
 <span class="n">Processing</span> <span class="n">SESSION_STATUS</span> <span class="n">event</span>
 <span class="n">SessionConnectionUp</span> <span class="o">=</span> <span class="p">{</span>
@@ -753,7 +744,7 @@
 </pre></div>
 </div>
 <p>Output:-</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">Processing</span> <span class="n">RESPONSE</span> <span class="n">event</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Processing</span> <span class="n">RESPONSE</span> <span class="n">event</span>
 <span class="n">MESSAGE</span> <span class="n">TYPE</span><span class="p">:</span> <span class="n">Report</span>
 <span class="n">records</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
         <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
@@ -979,91 +970,6 @@
         <span class="p">}</span>
         <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
                 <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;ITGI&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;INVESTMENT TECHNOLOGY GROUP&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">14</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">343927.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">700.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">345327.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">325</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;HSBC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;HSBC GROUP PLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">15</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">303222.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">303222.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;WELS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;WELLS FARGO SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">16</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">285496.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">1253.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">288002.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">116</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;COWN&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;COWEN &amp; COMPANY&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">17</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">280654.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">280654.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">11</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;RAJA&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;RAYMOND JAMES &amp; ASSOCIATES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">18</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">242873.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">242873.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">77</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
                         <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BERN&quot;</span>
                         <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SANFORD C. BERNSTEIN&quot;</span>
                         <span class="n">rank</span> <span class="o">=</span> <span class="mi">19</span>
@@ -1098,1060 +1004,6 @@
         <span class="p">}</span>
         <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
                 <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;OPCO&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;OPPENHEIMER &amp; CO.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">21</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">168897.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">168897.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">135</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BMOC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BMO CAPITAL MARKETS&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">22</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">165772.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">165772.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CIST&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CAPITAL INSTITUTIONAL SERVICES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">23</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">115000.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">115000.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">23</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BARD&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BAIRD (ROBERT W.) &amp; CO., INC.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">24</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">99034.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">11.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">99056.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">15</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;ISI&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;EVERCORE GROUP L.L.C.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">25</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">96000.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">96000.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">4</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;JONE&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;JONESTRADING&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">26</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">83758.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">83758.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">4</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;KEPL&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;KEPLER CAPITAL MARKETS&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">27</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">83143.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">83143.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">11582.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">71561.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">9</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;STFL&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;STIFEL NICOLAUS COMPANY, INC.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">28</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">74444.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">74444.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">29</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CANT&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CANTOR FITZGERALD L.P.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">29</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">70000.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">70000.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">7</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;WINS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;WINTERFLOOD SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">30</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">67588.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">67588.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;LQNT&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;LIQUIDNET, INC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">31</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">57382.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">4400.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">66182.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MIZS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MIZUHO SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">32</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">60663.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">60663.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">274</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;PEEL&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;PEEL HUNT LLP&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">33</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">56566.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">56566.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MACQ&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MACQUARIE SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">34</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">54635.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">54635.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">8</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;LOOP&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;LOOP CAPITAL MARKETS&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">35</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">45993.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">45993.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">11</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;JSSF&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;JMP SECURITIES LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">36</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">43747.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">43747.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BTIG&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BTIG LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">37</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">33935.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">33935.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">33935.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;SG&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SG SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">38</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">33399.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">33399.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">17</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CICC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CHINA INTERNATIONAL CAPITAL CO&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">39</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">31700.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">31700.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;DAIW&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;DAIWA SECURITIES INC.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">40</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">31600.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">31600.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;KBCE&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;KBC SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">41</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">30868.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">30868.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;KEYB&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;KEYBANC CAPITAL MARKETS&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">42</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">30722.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">30722.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">8</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;XP&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;XP SECURITIES LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">43</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">30150.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">30150.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">15</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;KBWI&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;KEEFE, BRUYETTE &amp; WOODS, INC.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">44</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">24340.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">24340.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;WBLR&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;WILLIAM BLAIR &amp; COMPANY&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">45</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">23652.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">23652.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;EXNE&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;EXANE&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">46</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">23245.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">23245.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">23245.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;DBAB&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;DEUTSCHE BANK SECURITIES INC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">47</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">22743.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">22743.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">8</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;VTB&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;VTB BANK&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">48</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">22150.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">22150.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;STRS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;STRATEGAS RESEARCH PARTNERS&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">49</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">20968.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">20968.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;ANOS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;ABEL / NOSER CORP&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">50</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">19920.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">19920.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">11</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BIDS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BIDS HOLDINGS, L.P.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">51</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">8900.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">17800.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MAKR&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MAKOR CAPITAL LTD&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">52</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">12151.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">12151.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;LCUK&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;LOUIS CAPITAL MARKETS, LP&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">53</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">11324.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">11324.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">11324.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;WLFE&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;WOLFE RESEARCH SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">54</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">10399.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">10399.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;SSCO&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SAFRA SECURITIES LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">55</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">8780.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">1000.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">9780.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">9780.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;ING&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;ING BANK&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">56</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">8516.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">8516.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">8516.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;INTL&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;INTL TRADING INC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">57</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">7613.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">7613.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">351.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">10</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;INSG&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;INTERSTATE GROUP, THE&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">58</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">7253.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">7253.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MNFB&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MAIN FIRST BANK AG&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">59</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">6802.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">6802.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">4</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;SBER&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SBERBANK CIB CJSC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">60</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">6770.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">6770.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CICS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CM-CIC SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">61</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">6521.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">6521.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">4</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BNYM&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BANK OF NEW YORK, THE&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">62</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">6271.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">6271.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;DBK&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;DEUTSCHE BANK AG&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">63</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">5130.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">5130.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">5130.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;DREX&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;DREXEL HAMILTON LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">64</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">3803.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">3803.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;JANY&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;JANNEY MONTGOMERY SCOTT&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">65</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">3585.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">3585.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MED&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MEDIOBANCA SPA&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">66</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">3049.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">3049.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">17</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CLSA&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CLSA&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">67</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">3000.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">3000.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;LEER&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;LEERINK SWANN &amp; COMPANY&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">68</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">2120.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">2120.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;SCMC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SCOTIA CAPITAL&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">69</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1906.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1906.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MIRA&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MIRABAUD SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">70</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1856.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1856.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;RENC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;RENAISSANCE CAPITAL LIMITED&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">71</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1770.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1770.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;EQUI&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;EQUITA SIM SPA&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">72</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1678.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1678.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">5</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;ENSK&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;ENSKILDA SECURITIES&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">73</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1562.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1562.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">1562.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BCM&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BERENBERG CAPITAL MARKETS LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">74</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1351.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1351.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">14</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BHL&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BANKHAUS LAMPE KG&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">75</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1205.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1205.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CBK&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;COMMERZBANK&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">76</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">1084.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">1084.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;BABK&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;BAADER BANK / HELVEA&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">77</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">956.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">956.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">606.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;MKMP&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;MKM PARTNERS&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">78</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">500.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">500.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;CSMS&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;CORNERSTONE MACRO LLC&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">79</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">408.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">408.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">6</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;RHC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SUNTRUST CAPITAL MARKETS, INC.&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">80</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">371.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">371.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;RMAC&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;RENAISSANCE MACRO RESEARCH LL&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">81</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">95.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">95.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">2</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
-                        <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;SOVA&quot;</span>
-                        <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;SOVA CAPITAL LIMITED&quot;</span>
-                        <span class="n">rank</span> <span class="o">=</span> <span class="mi">82</span>
-                <span class="p">}</span>
-                <span class="n">topBrokers</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="p">}</span>
-                <span class="n">bought</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">sold</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">traded</span> <span class="o">=</span> <span class="mf">32.000000</span>
-                <span class="n">crossed</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">total</span> <span class="o">=</span> <span class="mf">32.000000</span>
-                <span class="n">highTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">lowTouch</span> <span class="o">=</span> <span class="mf">0.000000</span>
-                <span class="n">numReports</span> <span class="o">=</span> <span class="mi">3</span>
-        <span class="p">}</span>
-        <span class="n">records</span> <span class="o">=</span> <span class="p">{</span>
-                <span class="n">broker</span> <span class="o">=</span> <span class="p">{</span>
                         <span class="n">acronym</span> <span class="o">=</span> <span class="s2">&quot;AGCO&quot;</span>
                         <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;AUERBACH GRAYSON COMPANY INC&quot;</span>
                         <span class="n">rank</span> <span class="o">=</span> <span class="mi">83</span>
@@ -2182,13 +1034,14 @@
 
 
            </div>
+           
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="serverApi.html" class="btn btn-neutral" title="Zero Footprint Deployment (ZFP)" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="serverApi.html" class="btn btn-neutral" title="Zero Footprint Deployment (ZFP)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -2197,11 +1050,11 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Terrence C. Kim.
+        &copy; Copyright 2020, Terrence C. Kim
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -2216,35 +1069,23 @@
 
   
 
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'0.1',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+    
 
   
 
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
+  <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>
