@@ -100,11 +100,13 @@ The following elements are available for RANK API.
 +------------------------------+-----------------------------------------------+---------+
 |Element Name                  | Description                                   | Type    |
 +==============================+===============================================+=========+
-|``acronym``                   | IPER code to target IOIs                      | string  |
+|``acronym``                   | Broker acronym / IPER code                    | string  |
 +------------------------------+-----------------------------------------------+---------+
-|``currency``                  | Currency of the IOI                           | string  |
+|``bought``                    | No bought                                     | float64 |
 +------------------------------+-----------------------------------------------+---------+
-|``delta``                     | Options delta                                 | float64 |
+|``crossed``                   | No crossed                                    | float64 |
++------------------------------+-----------------------------------------------+---------+
+|``rank``                      | Broker rank                                   | int32   |
 +------------------------------+-----------------------------------------------+---------+
 
 
@@ -120,9 +122,9 @@ Full code sample:-
 `rankDataRequest java`_
 ======================= =====================
 
-.. _rankDataRequest cs:
+.. _rankDataRequest cs: https://github.com/tkim/rank_api_repository/blob/master/RankAPI_C%23/rankDataRequest.cs
 .. _rankDataRequest java:
-.. _rankDataRequest py: https://github.com/tkim/rank_api_repository/blob/master/rankDataRequest.py
+.. _rankDataRequest py: https://github.com/tkim/rank_api_repository/blob/master/RankAPI_Python/rankDataRequest.py
 
 
 .. code-block:: python
