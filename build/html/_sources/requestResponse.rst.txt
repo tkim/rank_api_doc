@@ -102,12 +102,36 @@ The following elements are available for RANK API.
 +==============================+===============================================+=========+
 |``acronym``                   | Broker acronym / IPER code                    | string  |
 +------------------------------+-----------------------------------------------+---------+
-|``bought``                    | No bought                                     | float64 |
+|``bought``                    | Number of bought                              | float64 |
 +------------------------------+-----------------------------------------------+---------+
-|``crossed``                   | No crossed                                    | float64 |
+|``crossed``                   | Number of crossed                             | float64 |
++------------------------------+-----------------------------------------------+---------+
+|``errorCode``                 | Error code                                    | int32   |
++------------------------------+-----------------------------------------------+---------+
+|``errorMessage``              | Error Message                                 | string  |
++------------------------------+-----------------------------------------------+---------+
+|``figi``                      | Security identifier as figi                   | string  |
++------------------------------+-----------------------------------------------+---------+
+|``highTouch``                 | Number of high touch orders                   | float64 |
++------------------------------+-----------------------------------------------+---------+
+|``lowTouch``                  | Number of low touch orders                    | float64 |
++------------------------------+-----------------------------------------------+---------+
+|``numReports``                | Number of numReport                           | int32   |
 +------------------------------+-----------------------------------------------+---------+
 |``rank``                      | Broker rank                                   | int32   |
 +------------------------------+-----------------------------------------------+---------+
+|``ticker``                    | security identifier as Bloomberg ticker       | string  |
++------------------------------+-----------------------------------------------+---------+
+|``sold``                      | Number of sold                                | float64 |
++------------------------------+-----------------------------------------------+---------+
+|``timestampUtc``              | Timestampe in UTC                             | DateTime|
++------------------------------+-----------------------------------------------+---------+
+|``total``                     | Number of high touch orders                   | float64 |
++------------------------------+-----------------------------------------------+---------+
+|``traded``                    | Number of high touch orders                   | float64 |
++------------------------------+-----------------------------------------------+---------+
+
+
 
 
 RANK Data request
@@ -123,7 +147,7 @@ Full code sample:-
 ======================= =====================
 
 .. _rankDataRequest cs: https://github.com/tkim/rank_api_repository/blob/master/RankAPI_C%23/rankDataRequest.cs
-.. _rankDataRequest java:
+.. _rankDataRequest java: https://github.com/tkim/rank_api_repository/blob/master/RankAPI_Java/RankDataRequest.java
 .. _rankDataRequest py: https://github.com/tkim/rank_api_repository/blob/master/RankAPI_Python/rankDataRequest.py
 
 

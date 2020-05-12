@@ -14,16 +14,13 @@ End-Point
 Production:
 
 Production (China):
-
 Beta:
-
 Port Number:
 
 
 End-Point Discovery & Connectivity
 ==================================
 ZFP over Internet:
-
 ZFP over Leased Line(s):
 
 .. important::
@@ -34,7 +31,6 @@ ZFP over Leased Line(s):
 TCP or SOCKS Proxy
 ==================
 As of SDK 3.14.x.x, the SOCKS proxy is not supported in Bloomberg API.
-
 
 Concurrent Connection
 =====================
