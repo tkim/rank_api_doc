@@ -132,6 +132,11 @@ The following elements are available for RANK API.
 +------------------------------+-----------------------------------------------+---------+
 
 
+RANK API Schema
+===============
+`RANK API Schema`_ 
+
+.. _RANK API Schema: https://github.com/tkim/rank_api_repository/blob/master/rankAPI_1.0.0.4.xml
 
 
 RANK Data request
