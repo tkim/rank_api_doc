@@ -8,7 +8,7 @@ Once the client has thoroughly tested the custom-built strategies, they can acce
 
 .. important::
 
-	Please keep each request to have less than 3000 securities per request.
+	Please keep each request to have less than 90 securities per request.
 
 
 Accessing the Test Environment
@@ -44,50 +44,62 @@ Rank API service error messages:-
 +-------------------------------------------+----------+-------------------------------------------------------+
 |Error Message                              |Error Code|Definition                                             |
 +===========================================+==========+=======================================================+
-| | No Start Date provided in RANK API      | 99       | | Mandatory field, need to provide the start date     |
+| | No Start Date provided in RANK API      | 0        | | Mandatory field, need to provide the start date     |
 | | request                                 |          |                                                       |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | No End Date provided in RANK API        | 99       | | Mandatory field, need to provide end date           |
+| | No End Date provided in RANK API        | 0        | | Mandatory field, need to provide end date           |
 | | request                                 |          |                                                       |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | No units specified in RANK API          | 99       | | Mandatory field, need to specify units              |
+| | No units specified in RANK API          | 0        | | Mandatory field, need to specify units              |
 | | request                                 |          | | (e.g. Shares, Local, USD, EUR, GBP)                 |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | No gropuBy specified in RANK API        | 99       | | Mandatory field, need to specify groupby element    |
+| | No gropuBy specified in RANK API        | 0        | | Mandatory field, need to specify groupby element    |
 | | request                                 |          | | (e.g. broker or security)                           |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | No source specified in RANK API         | 99       | | Mandatory field, need to specify the source element |
+| | No source specified in RANK API         | 0        | | Mandatory field, need to specify the source element |
 | | request                                 |          | | (e.g. Broker Contributed)                           |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | Source field invalid. Only source =     | 28       | | The source field has invalid input value.           |
-| | BROKER_CONTRIBUTED is supported         |          |                                                       |  
+| | Invalid request parameters              | 1        | | Invalid request. The result contains multiple       |
+|                                           |          | | exchanges or no securities, exchanges or brokers are|
+|                                           |          | | specified in the request.                           |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Invalid start date                      | 1        | | The start date parameter contains invalid input.    |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Invalid end date                        | 1        | | The end date parameter contains invalid input.      |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | End date should not be earlier than     | 1        | | The start date/time should be earlier in date/time  |
+| | start date                              |          | | compared to the end date/time.                      |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Start date cannot be earlier than       | 1        | | The start date/time should be within 5 years from   | 
+| | 1st of Jan 5 years ago                  |          | | the current date.                                   |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Start date cannot be a future date      | 1        | | Start date cannot be a future date.                 |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | End date cannot be a future date        | 1        | | End date cannot be a future date.                   |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Number of brokers limited to 6          | 1        | | A maximum of 6 brokers allowed in input query       | 
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Number of securities limited to 90      | 1        | | A maximum of 90 securities allowed in input query   |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Current day queries can only request    | 1        | | If value information is required, remove current day|
+| | volume information                      |          | | from query. If current day information is required, |
+|                                           |          | | choose to get the response by volume rather than    |
+|                                           |          | | currency.                                           |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Request Timeout                         | 10       | | Backend timeout, please contact support.            |  
 +-------------------------------------------+----------+-------------------------------------------------------+
 | | Invalid unit value                      | 20       | | The unit field has invalid input value.             |
 +-------------------------------------------+----------+-------------------------------------------------------+
 | | Invalid groupby value                   | 21       | | The groupby field has invalid input value.          |
 |                                           |          | | (e.g. broker or security)                           |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | Invalid start date                      | 22       | | The start date parameter contains invalid input.    |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| | Invalid end date                        | 23       | | The end date parameter contains invalid input.      |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| | Invalid security selection              | 27       | | Neither ticker nor figi was provided.               |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| | Invalid request parameters              | 1        | | Invalid request. The result contains multiple       |
-|                                           |          | | exchanges or no securities, exchanges or brokers are|
-|                                           |          | | specified in the request.                           |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| | Invalid broker list include/exclude     | 5        | | Invalid combination of included or excluded broker  |
-| | combination.                            |          | | list.                                               |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| End date less than start date             | 24       | | The start date/time should be earlier in date/time  |
-|                                           |          | | compared to the end date/time.                      |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| | Start date less than earliest allowed   | 25       | | The start date/time should be within 5 years from   | 
-| | date for RANK query                     |          | | the current date.                                   |
-+-------------------------------------------+----------+-------------------------------------------------------+
-| | No ticker conversion for figi           | 26       | | The figi provided did not find a corresponding      |
+| | No ticker conversion for figi           | 22       | | The figi provided did not find a corresponding      |
 |                                           |          | | ticker value.                                       |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Invalid security selection              | 23       | | Neither ticker nor figi was provided.               |
++-------------------------------------------+----------+-------------------------------------------------------+
+| | Source field invalid. Only source =     | 24       | | The source field has invalid input value.           |
+| | BROKER_CONTRIBUTED is supported         |          |                                                       |
 +-------------------------------------------+----------+-------------------------------------------------------+
 | | Internal Error                          | Various  | | Please contact Bloomberg, miscellaneous error.      |
 +-------------------------------------------+----------+-------------------------------------------------------+
@@ -116,7 +128,7 @@ The following elements are available for RANK API.
 +------------------------------+-----------------------------------------------+---------+
 |``lowTouch``                  | Number of low touch orders                    | float64 |
 +------------------------------+-----------------------------------------------+---------+
-|``numReports``                | Number of numReport                           | int32   |
+|``numReports``                | Number of reports                             | int32   |
 +------------------------------+-----------------------------------------------+---------+
 |``rank``                      | Broker rank                                   | int32   |
 +------------------------------+-----------------------------------------------+---------+
@@ -124,11 +136,11 @@ The following elements are available for RANK API.
 +------------------------------+-----------------------------------------------+---------+
 |``sold``                      | Number of sold                                | float64 |
 +------------------------------+-----------------------------------------------+---------+
-|``timestampUtc``              | Timestampe in UTC                             | DateTime|
+|``timestampUtc``              | Timestamp in UTC                              | DateTime|
 +------------------------------+-----------------------------------------------+---------+
-|``total``                     | Number of high touch orders                   | float64 |
+|``total``                     | Number of total orders                        | float64 |
 +------------------------------+-----------------------------------------------+---------+
-|``traded``                    | Number of high touch orders                   | float64 |
+|``traded``                    | Number of traded orders                       | float64 |
 +------------------------------+-----------------------------------------------+---------+
 
 

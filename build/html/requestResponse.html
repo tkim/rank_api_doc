@@ -164,7 +164,7 @@
 <p>Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal notranslate"><span class="pre">//blp/rankapi</span></code>.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
-<p class="last">Please keep each request to have less than 3000 securities per request.</p>
+<p class="last">Please keep each request to have less than 90 securities per request.</p>
 </div>
 <div class="section" id="accessing-the-test-environment">
 <h2>Accessing the Test Environment<a class="headerlink" href="#accessing-the-test-environment" title="Permalink to this headline">¶</a></h2>
@@ -221,7 +221,7 @@
 <div class="line">request</div>
 </div>
 </td>
-<td>99</td>
+<td>0</td>
 <td><div class="first last line-block">
 <div class="line">Mandatory field, need to provide the start date</div>
 </div>
@@ -232,7 +232,7 @@
 <div class="line">request</div>
 </div>
 </td>
-<td>99</td>
+<td>0</td>
 <td><div class="first last line-block">
 <div class="line">Mandatory field, need to provide end date</div>
 </div>
@@ -243,7 +243,7 @@
 <div class="line">request</div>
 </div>
 </td>
-<td>99</td>
+<td>0</td>
 <td><div class="first last line-block">
 <div class="line">Mandatory field, need to specify units</div>
 <div class="line">(e.g. Shares, Local, USD, EUR, GBP)</div>
@@ -255,7 +255,7 @@
 <div class="line">request</div>
 </div>
 </td>
-<td>99</td>
+<td>0</td>
 <td><div class="first last line-block">
 <div class="line">Mandatory field, need to specify groupby element</div>
 <div class="line">(e.g. broker or security)</div>
@@ -267,7 +267,7 @@
 <div class="line">request</div>
 </div>
 </td>
-<td>99</td>
+<td>0</td>
 <td><div class="first last line-block">
 <div class="line">Mandatory field, need to specify the source element</div>
 <div class="line">(e.g. Broker Contributed)</div>
@@ -275,13 +275,122 @@
 </td>
 </tr>
 <tr class="row-odd"><td><div class="first last line-block">
-<div class="line">Source field invalid. Only source =</div>
-<div class="line">BROKER_CONTRIBUTED is supported</div>
+<div class="line">Invalid request parameters</div>
 </div>
 </td>
-<td>28</td>
+<td>1</td>
 <td><div class="first last line-block">
-<div class="line">The source field has invalid input value.</div>
+<div class="line">Invalid request. The result contains multiple</div>
+<div class="line">exchanges or no securities, exchanges or brokers are</div>
+<div class="line">specified in the request.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">Invalid start date</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">The start date parameter contains invalid input.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Invalid end date</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">The end date parameter contains invalid input.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">End date should not be earlier than</div>
+<div class="line">start date</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">The start date/time should be earlier in date/time</div>
+<div class="line">compared to the end date/time.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Start date cannot be earlier than</div>
+<div class="line">1st of Jan 5 years ago</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">The start date/time should be within 5 years from</div>
+<div class="line">the current date.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">Start date cannot be a future date</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">Start date cannot be a future date.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">End date cannot be a future date</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">End date cannot be a future date.</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">Number of brokers limited to 6</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">A maximum of 6 brokers allowed in input query</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Number of securities limited to 90</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">A maximum of 90 securities allowed in input query</div>
+</div>
+</td>
+</tr>
+<tr class="row-even"><td><div class="first last line-block">
+<div class="line">Current day queries can only request</div>
+<div class="line">volume information</div>
+</div>
+</td>
+<td>1</td>
+<td><div class="first last line-block">
+<div class="line">If value information is required, remove current day</div>
+<div class="line">from query. If current day information is required,</div>
+<div class="line">choose to get the response by volume rather than</div>
+<div class="line">currency.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Request Timeout</div>
+</div>
+</td>
+<td>10</td>
+<td><div class="first last line-block">
+<div class="line">Backend timeout, please contact support.</div>
 </div>
 </td>
 </tr>
@@ -307,91 +416,38 @@
 </td>
 </tr>
 <tr class="row-even"><td><div class="first last line-block">
-<div class="line">Invalid start date</div>
-</div>
-</td>
-<td>22</td>
-<td><div class="first last line-block">
-<div class="line">The start date parameter contains invalid input.</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><div class="first last line-block">
-<div class="line">Invalid end date</div>
-</div>
-</td>
-<td>23</td>
-<td><div class="first last line-block">
-<div class="line">The end date parameter contains invalid input.</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><div class="first last line-block">
-<div class="line">Invalid security selection</div>
-</div>
-</td>
-<td>27</td>
-<td><div class="first last line-block">
-<div class="line">Neither ticker nor figi was provided.</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><div class="first last line-block">
-<div class="line">Invalid request parameters</div>
-</div>
-</td>
-<td>1</td>
-<td><div class="first last line-block">
-<div class="line">Invalid request. The result contains multiple</div>
-<div class="line">exchanges or no securities, exchanges or brokers are</div>
-<div class="line">specified in the request.</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><div class="first last line-block">
-<div class="line">Invalid broker list include/exclude</div>
-<div class="line">combination.</div>
-</div>
-</td>
-<td>5</td>
-<td><div class="first last line-block">
-<div class="line">Invalid combination of included or excluded broker</div>
-<div class="line">list.</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td>End date less than start date</td>
-<td>24</td>
-<td><div class="first last line-block">
-<div class="line">The start date/time should be earlier in date/time</div>
-<div class="line">compared to the end date/time.</div>
-</div>
-</td>
-</tr>
-<tr class="row-even"><td><div class="first last line-block">
-<div class="line">Start date less than earliest allowed</div>
-<div class="line">date for RANK query</div>
-</div>
-</td>
-<td>25</td>
-<td><div class="first last line-block">
-<div class="line">The start date/time should be within 5 years from</div>
-<div class="line">the current date.</div>
-</div>
-</td>
-</tr>
-<tr class="row-odd"><td><div class="first last line-block">
 <div class="line">No ticker conversion for figi</div>
 </div>
 </td>
-<td>26</td>
+<td>22</td>
 <td><div class="first last line-block">
 <div class="line">The figi provided did not find a corresponding</div>
 <div class="line">ticker value.</div>
 </div>
 </td>
 </tr>
+<tr class="row-odd"><td><div class="first last line-block">
+<div class="line">Invalid security selection</div>
+</div>
+</td>
+<td>23</td>
+<td><div class="first last line-block">
+<div class="line">Neither ticker nor figi was provided.</div>
+</div>
+</td>
+</tr>
 <tr class="row-even"><td><div class="first last line-block">
+<div class="line">Source field invalid. Only source =</div>
+<div class="line">BROKER_CONTRIBUTED is supported</div>
+</div>
+</td>
+<td>24</td>
+<td><div class="first last line-block">
+<div class="line">The source field has invalid input value.</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><div class="first last line-block">
 <div class="line">Internal Error</div>
 </div>
 </td>
@@ -453,7 +509,7 @@
 <td>float64</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">numReports</span></code></td>
-<td>Number of numReport</td>
+<td>Number of reports</td>
 <td>int32</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">rank</span></code></td>
@@ -469,15 +525,15 @@
 <td>float64</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">timestampUtc</span></code></td>
-<td>Timestampe in UTC</td>
+<td>Timestamp in UTC</td>
 <td>DateTime</td>
 </tr>
 <tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">total</span></code></td>
-<td>Number of high touch orders</td>
+<td>Number of total orders</td>
 <td>float64</td>
 </tr>
 <tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">traded</span></code></td>
-<td>Number of high touch orders</td>
+<td>Number of traded orders</td>
 <td>float64</td>
 </tr>
 </tbody>
