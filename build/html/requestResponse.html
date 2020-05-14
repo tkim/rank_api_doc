@@ -161,7 +161,7 @@
   <div class="section" id="rank-api-data-request">
 <h1>RANK API data request<a class="headerlink" href="#rank-api-data-request" title="Permalink to this headline">¶</a></h1>
 <p>For RANK API data extraction is accopmlished by referencing <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code>  as the service name in your program. This command will allow your service to redirect all RANK API request to the test environment.</p>
-<p>Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal notranslate"><span class="pre">//blp/rankapi</span></code>.</p>
+<p>Once the client has thoroughly tested the custom-built strategies, they can access the service in production environment by changing the service name from <code class="docutils literal notranslate"><span class="pre">//blp/rankapi-beta</span></code> to  <code class="docutils literal notranslate"><span class="pre">//blp/rankapi</span></code>.</p>
 <div class="admonition important">
 <p class="first admonition-title">Important</p>
 <p class="last">Please keep each request to have less than 90 securities per request.</p>
@@ -251,7 +251,7 @@
 </td>
 </tr>
 <tr class="row-odd"><td><div class="first last line-block">
-<div class="line">No gropuBy specified in RANK API</div>
+<div class="line">No groupBy specified in RANK API</div>
 <div class="line">request</div>
 </div>
 </td>
@@ -319,14 +319,16 @@
 </td>
 </tr>
 <tr class="row-odd"><td><div class="first last line-block">
-<div class="line">Start date cannot be earlier than</div>
-<div class="line">1st of Jan 5 years ago</div>
+<div class="line">Start date cannot be earlier than &lt;1st</div>
+<div class="line">of Jan 5 years ago&gt; (e.g. start date</div>
+<div class="line">cannot be earlier than 20150101</div>
 </div>
 </td>
 <td>1</td>
 <td><div class="first last line-block">
 <div class="line">The start date/time should be within 5 years from</div>
 <div class="line">the current date.</div>
+<div class="line"><br /></div>
 </div>
 </td>
 </tr>
@@ -496,43 +498,47 @@
 <td>Error Message</td>
 <td>string</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">figi</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">exchangeCode</span></code></td>
+<td>Exchange code</td>
+<td>string</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">figi</span></code></td>
 <td>Security identifier as figi</td>
 <td>string</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">highTouch</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">highTouch</span></code></td>
 <td>Number of high touch orders</td>
 <td>float64</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">lowTouch</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">lowTouch</span></code></td>
 <td>Number of low touch orders</td>
 <td>float64</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">numReports</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">numReports</span></code></td>
 <td>Number of reports</td>
 <td>int32</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">rank</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">rank</span></code></td>
 <td>Broker rank</td>
 <td>int32</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">ticker</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">ticker</span></code></td>
 <td>security identifier as Bloomberg ticker</td>
 <td>string</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">sold</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">sold</span></code></td>
 <td>Number of sold</td>
 <td>float64</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">timestampUtc</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">timestampUtc</span></code></td>
 <td>Timestamp in UTC</td>
 <td>DateTime</td>
 </tr>
-<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">total</span></code></td>
+<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">total</span></code></td>
 <td>Number of total orders</td>
 <td>float64</td>
 </tr>
-<tr class="row-even"><td><code class="docutils literal notranslate"><span class="pre">traded</span></code></td>
+<tr class="row-odd"><td><code class="docutils literal notranslate"><span class="pre">traded</span></code></td>
 <td>Number of traded orders</td>
 <td>float64</td>
 </tr>

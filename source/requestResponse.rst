@@ -4,7 +4,7 @@ RANK API data request
 
 For RANK API data extraction is accopmlished by referencing ``//blp/rankapi-beta``  as the service name in your program. This command will allow your service to redirect all RANK API request to the test environment.
 
-Once the client has thoroughly tested the custom-built strategies, they can acces the service in production environment by changing the service name from ``//blp/rankapi-beta`` to  ``//blp/rankapi``.
+Once the client has thoroughly tested the custom-built strategies, they can access the service in production environment by changing the service name from ``//blp/rankapi-beta`` to  ``//blp/rankapi``.
 
 .. important::
 
@@ -53,7 +53,7 @@ Rank API service error messages:-
 | | No units specified in RANK API          | 0        | | Mandatory field, need to specify units              |
 | | request                                 |          | | (e.g. Shares, Local, USD, EUR, GBP)                 |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | No gropuBy specified in RANK API        | 0        | | Mandatory field, need to specify groupby element    |
+| | No groupBy specified in RANK API        | 0        | | Mandatory field, need to specify groupby element    |
 | | request                                 |          | | (e.g. broker or security)                           |
 +-------------------------------------------+----------+-------------------------------------------------------+
 | | No source specified in RANK API         | 0        | | Mandatory field, need to specify the source element |
@@ -70,8 +70,9 @@ Rank API service error messages:-
 | | End date should not be earlier than     | 1        | | The start date/time should be earlier in date/time  |
 | | start date                              |          | | compared to the end date/time.                      |
 +-------------------------------------------+----------+-------------------------------------------------------+
-| | Start date cannot be earlier than       | 1        | | The start date/time should be within 5 years from   | 
-| | 1st of Jan 5 years ago                  |          | | the current date.                                   |
+| | Start date cannot be earlier than <1st  | 1        | | The start date/time should be within 5 years from   | 
+| | of Jan 5 years ago> (e.g. start date    |          | | the current date.                                   |
+| | cannot be earlier than 20150101         |          | |                                                     |
 +-------------------------------------------+----------+-------------------------------------------------------+
 | | Start date cannot be a future date      | 1        | | Start date cannot be a future date.                 |
 +-------------------------------------------+----------+-------------------------------------------------------+
@@ -121,6 +122,8 @@ The following elements are available for RANK API.
 |``errorCode``                 | Error code                                    | int32   |
 +------------------------------+-----------------------------------------------+---------+
 |``errorMessage``              | Error Message                                 | string  |
++------------------------------+-----------------------------------------------+---------+
+|``exchangeCode``              | Exchange code                                 | string  |
 +------------------------------+-----------------------------------------------+---------+
 |``figi``                      | Security identifier as figi                   | string  |
 +------------------------------+-----------------------------------------------+---------+
