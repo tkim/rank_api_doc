@@ -1,50 +1,58 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Zero Footprint Deployment (ZFP) &mdash; RANK API Programmers Guide 0.1 documentation</title>
   
 
   
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="RANK API data request" href="requestResponse.html" />
     <link rel="prev" title="Introduction" href="introduction.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -75,6 +83,7 @@
           
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -102,6 +111,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -136,18 +146,20 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Zero Footprint Deployment (ZFP)</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/serverApi.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -167,8 +179,8 @@
 <div class="section" id="end-point">
 <h2>End-Point<a class="headerlink" href="#end-point" title="Permalink to this headline">¶</a></h2>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">Prior to connecting, customer must create an endpoint to Bloomberg service on AWS. (Amazon Web Services)</p>
+<p class="admonition-title">Important</p>
+<p>Prior to connecting, customer must create an endpoint to Bloomberg service on AWS. (Amazon Web Services)</p>
 </div>
 <p>Production:</p>
 <p>Production (China):
@@ -180,8 +192,8 @@ Port Number:</p>
 <p>ZFP over Internet:
 ZFP over Leased Line(s):</p>
 <div class="admonition important">
-<p class="first admonition-title">Important</p>
-<p class="last">The client should always use the host name listed below and not the actual IP addresses.</p>
+<p class="admonition-title">Important</p>
+<p>The client should always use the host name listed below and not the actual IP addresses.</p>
 </div>
 </div>
 <div class="section" id="tcp-or-socks-proxy">
@@ -200,13 +212,13 @@ ZFP over Leased Line(s):</p>
 <h2>Linux Environment<a class="headerlink" href="#linux-environment" title="Permalink to this headline">¶</a></h2>
 <p>The following example is based on the linux environment.</p>
 <ul class="simple">
-<li>Run serverapi.exe</li>
+<li><p>Run serverapi.exe</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span># ./serverapiinstaller64
 </pre></div>
 </div>
 <ul class="simple">
-<li>You will see the following message</li>
+<li><p>You will see the following message</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span># ./serverapiinstaller64
 logging to /tmp/bloomberg/install.2019111211.130037.log
@@ -225,7 +237,7 @@ Would you like to continue? (Y/N):
 </pre></div>
 </div>
 <ul class="simple">
-<li>Type:- Y</li>
+<li><p>Type:- Y</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Would you like to continue? (Y/N): Y
 
@@ -296,7 +308,7 @@ Internet connectivity unavailable. Connecting via the Bloomberg Network.
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select the appropriate network option if it doesn’t select by default (private vs. public/internet)</li>
+<li><p>Select the appropriate network option if it doesn’t select by default (private vs. public/internet)</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Select Product Class
 1) blpddm    Software that provides development access to distribute data locally or contribute data to Bloomberg.
@@ -305,7 +317,7 @@ Internet connectivity unavailable. Connecting via the Bloomberg Network.
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select:- 2 for Server API</li>
+<li><p>Select:- 2 for Server API</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please enter selection: 2
 
@@ -316,7 +328,7 @@ Use this path? (Y/N/Q):
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select:- York</li>
+<li><p>Select:- York</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Creating the root directory /opt/local ...
 done.
@@ -330,8 +342,8 @@ Beginning new install ...
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If the default port is already being used by a different service it may show the following message:</p>
+<p class="admonition-title">Note</p>
+<p>If the default port is already being used by a different service it may show the following message:</p>
 </div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>*** WARNING: Port conflict detected with other service.
 The port of the Desktop will conflict with the ServerApi should installation proceed. If you still want to install
@@ -341,14 +353,14 @@ ServerApi, you will need to specify a different port number.
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select:- Y and enter the port</li>
+<li><p>Select:- Y and enter the port</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Do you want to continue with the installation? (Y/N) [N]:y
 Please enter ServerApi listen port: [8294]:8294
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select the version:-</li>
+<li><p>Select the version:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Versions available for ServerApi
 1) 3.86.5.1     Linux64     ServerAPI 2017-06
@@ -382,14 +394,14 @@ Please enter version of ServerApi that you want to install:
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select the latest:-</li>
+<li><p>Select the latest:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please enter version of ServerApi that you want to install: 13
 Downloading ServerApi components ...
 </pre></div>
 </div>
 <ul class="simple">
-<li>Enter other information:-</li>
+<li><p>Enter other information:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Enter the following information:
 
@@ -401,7 +413,7 @@ Downloading ServerApi components ...
 </pre></div>
 </div>
 <ul class="simple">
-<li>Finished:-</li>
+<li><p>Finished:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Enter the following information:
 
@@ -432,21 +444,21 @@ ServerApi installation completed. Press ENTER to quit:
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Once the registration process is completed. EMSX Implementation team globally will assist with configuring the Server Side EMSX API with various execution destinations per client request.</p>
+<p class="admonition-title">Note</p>
+<p>Once the registration process is completed. EMSX Implementation team globally will assist with configuring the Server Side EMSX API with various execution destinations per client request.</p>
 </div>
 </div>
 <div class="section" id="windows-environment">
 <h2>Windows Environment<a class="headerlink" href="#windows-environment" title="Permalink to this headline">¶</a></h2>
 <p>The following example is based on the windows environment.</p>
 <ul class="simple">
-<li>Run serverapi.exe</li>
+<li><p>Run serverapi.exe</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\temp&gt;serverapiinstaller.exe
 </pre></div>
 </div>
 <ul class="simple">
-<li>You will see the following message</li>
+<li><p>You will see the following message</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>C:\temp&gt;serverapiinstaller.exe
 logging to C:\temp\install.2016102610.152444.log
@@ -479,7 +491,7 @@ Would you like to continue? (Y/N):
 </pre></div>
 </div>
 <ul class="simple">
-<li>Type:- Y</li>
+<li><p>Type:- Y</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Would you like to continue? (Y/N): y
 
@@ -527,7 +539,7 @@ Which of the above routes will you use to connect to Bloomberg? (a/b):
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select the appropriate network option (private vs. public/internet)</li>
+<li><p>Select the appropriate network option (private vs. public/internet)</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Which of the above routes will you use to connect to Bloomberg? (a/b): b
 
@@ -542,7 +554,7 @@ Please enter selection:
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select:- 2 for Server API</li>
+<li><p>Select:- 2 for Server API</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please enter selection: 2
 
@@ -553,7 +565,7 @@ Use this path? (Y/N/Q):
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select:- Y</li>
+<li><p>Select:- Y</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Use this path? (Y/N/Q): y
 
@@ -566,8 +578,8 @@ Beginning new install ...
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">If the default port is already being used by a different service it may show the following message:</p>
+<p class="admonition-title">Note</p>
+<p>If the default port is already being used by a different service it may show the following message:</p>
 </div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>*** WARNING: Port conflict detected with other service.
 The port of the Desktop will conflict with the ServerApi should installation proceed. If you still want to install
@@ -577,14 +589,14 @@ ServerApi, you will need to specify a different port number.
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select:- Y and enter the port</li>
+<li><p>Select:- Y and enter the port</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Do you want to continue with the installation? (Y/N) [N]:y
 Please enter ServerApi listen port: [8294]:8294
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select the version:-</li>
+<li><p>Select the version:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Versions available for ServerApi
 1) 3.46.6.0     Windows     ServerAPI 2014-07
@@ -632,14 +644,14 @@ Please enter version of ServerApi that you want to install:
 </pre></div>
 </div>
 <ul class="simple">
-<li>Select the latest:-</li>
+<li><p>Select the latest:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Please enter version of ServerApi that you want to install: 20
 Downloading ServerApi components ...
 </pre></div>
 </div>
 <ul>
-<li><p class="first">Enter other information:-</p>
+<li><p>Enter other information:-</p>
 <blockquote>
 <div><p>Enter the following information:</p>
 <p>Country (e.g., USA):
@@ -649,8 +661,7 @@ Company Name (e.g., Bloomberg L.P.):
 Department Name (e.g., Equity Trading):</p>
 </div></blockquote>
 </li>
-<li><p class="first">Finished:-</p>
-</li>
+<li><p>Finished:-</p></li>
 </ul>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Enter the following information:
 
@@ -689,8 +700,8 @@ Your registration key is:
 </pre></div>
 </div>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Once the registration process is completed. EMSX Implementation team globally will assist with configuring the Server Side EMSX API with various execution destinations per client request.</p>
+<p class="admonition-title">Note</p>
+<p>Once the registration process is completed. EMSX Implementation team globally will assist with configuring the Server Side EMSX API with various execution destinations per client request.</p>
 </div>
 </div>
 <div class="section" id="creating-user-identities">
@@ -793,21 +804,21 @@ Server:
     <span class="n">authReq</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s2">&quot;ipAdress&quot;</span><span class="p">,</span> <span class="n">d_ip</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">identity</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">createIdentity</span><span class="p">()</span>
 
-    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Sending authorization rquest: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">authReq</span><span class="p">))</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Sending authorization rquest: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">authReq</span><span class="p">))</span>
 
     <span class="n">session</span><span class="o">.</span><span class="n">sendAuthorizationRequest</span><span class="p">(</span><span class="n">authReq</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">identity</span><span class="p">)</span>
 
-    <span class="k">print</span> <span class="p">(</span><span class="s2">&quot;Authorization request sent.&quot;</span><span class="p">)</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s2">&quot;Authorization request sent.&quot;</span><span class="p">)</span>
 
 <span class="o">...</span>
 
 <span class="k">def</span> <span class="nf">processAuthorizationStatusEvent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
 
-    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Processing AUTHORIZATION_STATUS event&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Processing AUTHORIZATION_STATUS event&quot;</span><span class="p">)</span>
 
                     <span class="k">for</span> <span class="n">msg</span> <span class="ow">in</span> <span class="n">event</span><span class="p">:</span>
 
-            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;AUTHORIZATION_STATUS message: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">msg</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;AUTHORIZATION_STATUS message: </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">msg</span><span class="p">))</span>
 
 <span class="o">...</span>
 
@@ -830,29 +841,29 @@ Server:
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="requestResponse.html" class="btn btn-neutral float-right" title="RANK API data request" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="introduction.html" class="btn btn-neutral" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="requestResponse.html" class="btn btn-neutral float-right" title="RANK API data request" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="introduction.html" class="btn btn-neutral float-left" title="Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2020, Terrence C. Kim
+        &#169; Copyright 2020, Terrence C. Kim.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
@@ -861,26 +872,16 @@ Server:
   </div>
   
 
-
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-    
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>
